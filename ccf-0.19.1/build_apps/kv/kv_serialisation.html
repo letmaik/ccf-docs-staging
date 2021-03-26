@@ -340,7 +340,7 @@
   <div class="section" id="kv-serialisation">
 <h1>KV Serialisation<a class="headerlink" href="#kv-serialisation" title="Permalink to this headline">¶</a></h1>
 <p>Every transaction executed by the primary on its key-value store is serialised before being replicated to all backups of the CCF network and written to the ledger.</p>
-<p>Writes to private <code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Map</span></code>s are encrypted before being written to the ledger, and can only be decrypted by other nodes within the service. Writes to public <code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Map</span></code>s are only integrity-protected; they are readable by anyone with access to the ledger.</p>
+<p>Writes to private <a class="reference internal" href="api.html#_CPPv4N2kv3MapE" title="kv::Map"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Map</span></code></a>s are encrypted before being written to the ledger, and can only be decrypted by other nodes within the service. Writes to public <a class="reference internal" href="api.html#_CPPv4N2kv3MapE" title="kv::Map"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Map</span></code></a>s are only integrity-protected; they are readable by anyone with access to the ledger.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Transactions are serialised to <a class="reference external" href="https://msgpack.org/">MessagePack</a> with a prepended header for integrity protection.</p>
@@ -379,10 +379,10 @@
 <td colspan="3"><p>bool</p></td>
 <td><p>Is snapshot (<code class="docutils literal notranslate"><span class="pre">false</span></code> for all ledger entries)</p></td>
 </tr>
-<tr class="row-odd"><td colspan="3"><p><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Version</span></code></p></td>
+<tr class="row-odd"><td colspan="3"><p><a class="reference internal" href="api.html#_CPPv4N2kv7VersionE" title="kv::Version"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Version</span></code></a></p></td>
 <td><p>Transaction version</p></td>
 </tr>
-<tr class="row-even"><td colspan="3"><p><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Version</span></code></p></td>
+<tr class="row-even"><td colspan="3"><p><a class="reference internal" href="api.html#_CPPv4N2kv7VersionE" title="kv::Version"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Version</span></code></a></p></td>
 <td><p>Indicates after which version can this ledger entry be executed while
 maintaining linearizability</p></td>
 </tr>
@@ -396,14 +396,14 @@ maintaining linearizability</p></td>
 </div>
 </td>
 <td><div class="line-block">
-<div class="line">Indicates the start of a new serialised <code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Map</span></code></div>
-<div class="line">Name of the serialised <code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Map</span></code></div>
+<div class="line">Indicates the start of a new serialised <a class="reference internal" href="api.html#_CPPv4N2kv3MapE" title="kv::Map"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Map</span></code></a></div>
+<div class="line">Name of the serialised <a class="reference internal" href="api.html#_CPPv4N2kv3MapE" title="kv::Map"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Map</span></code></a></div>
 </div>
 </td>
 </tr>
 <tr class="row-odd"><td></td>
 <td colspan="2"><div class="line-block">
-<div class="line"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Version</span></code></div>
+<div class="line"><a class="reference internal" href="api.html#_CPPv4N2kv7VersionE" title="kv::Version"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Version</span></code></a></div>
 </div>
 </td>
 <td><div class="line-block">
@@ -496,7 +496,7 @@ maintaining linearizability</p></td>
 </div>
 <div class="section" id="custom-key-and-value-types">
 <h2>Custom key and value types<a class="headerlink" href="#custom-key-and-value-types" title="Permalink to this headline">¶</a></h2>
-<p>User-defined types can be used for both the key and value types of a <code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Map</span></code>. It must be possible to use the key type as the key of an <code class="docutils literal notranslate"><span class="pre">std::map</span></code> (so it must be copyable, assignable, and less-comparable), and both types must be serialisable. By default, when using a <code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Map</span></code>, serialisation converts to <a class="reference external" href="https://msgpack.org/">MessagePack</a> using <a class="reference external" href="https://github.com/msgpack/msgpack-c">msgpack-c</a>. To add support to your custom types, it should usually be possible to use the <code class="docutils literal notranslate"><span class="pre">MSGPACK_DEFINE</span></code> macro:</p>
+<p>User-defined types can be used for both the key and value types of a <a class="reference internal" href="api.html#_CPPv4N2kv3MapE" title="kv::Map"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Map</span></code></a>. It must be possible to use the key type as the key of an <code class="docutils literal notranslate"><span class="pre">std::map</span></code> (so it must be copyable, assignable, and less-comparable), and both types must be serialisable. By default, when using a <a class="reference internal" href="api.html#_CPPv4N2kv3MapE" title="kv::Map"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Map</span></code></a>, serialisation converts to <a class="reference external" href="https://msgpack.org/">MessagePack</a> using <a class="reference external" href="https://github.com/msgpack/msgpack-c">msgpack-c</a>. To add support to your custom types, it should usually be possible to use the <code class="docutils literal notranslate"><span class="pre">MSGPACK_DEFINE</span></code> macro:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="nc">CustomClass</span>
 <span class="p">{</span>
   <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">s</span><span class="p">;</span>
@@ -547,7 +547,7 @@ maintaining linearizability</p></td>
 <span class="p">};</span>
 </pre></div>
 </div>
-<p>To use these serialised for a specific map declare the map as a <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">kv::TypedMap</span></code>, adding the appropriate serialiser types for the key and value types:</p>
+<p>To use these serialised for a specific map declare the map as a <a class="reference internal" href="api.html#_CPPv4I0000EN2kv8TypedMapE" title="kv::TypedMap"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">kv::TypedMap</span></code></a>, adding the appropriate serialiser types for the key and value types:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span> <span class="n">CustomSerialisedMap</span> <span class="o">=</span>
   <span class="n">kv</span><span class="o">::</span><span class="n">TypedMap</span><span class="o">&lt;</span><span class="n">CustomClass</span><span class="p">,</span> <span class="n">CustomClass</span><span class="p">,</span> <span class="n">CustomSerialiser</span><span class="p">,</span> <span class="n">CustomSerialiser</span><span class="o">&gt;</span><span class="p">;</span>
 </pre></div>

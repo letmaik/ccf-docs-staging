@@ -385,6 +385,52 @@
 }
 </style>
 <script>
+        function onVersionChange() {
+            const v = document.getElementById("versions").value;
+            const thisURL = window.location.toString();
+            const targetURL = thisURL.replace("main", v);
+            window.location.href = targetURL;
+        }
+
+        window.addEventListener("DOMContentLoaded",function(){
+            const versionsEl = document.getElementById("versions-container");
+            const navEl = document.querySelector("nav.tsd-navigation.primary>ul");
+            navEl.prepend(versionsEl);
+
+            const selectedVersion = "main";
+            let sel = document.getElementById("versions");
+            if (sel != null) {
+                let opts = sel.options;
+                for (var opt, j = 0; opt = opts[j]; j++) {
+                    if (opt.text == selectedVersion) {
+                        sel.selectedIndex = j;
+                        break;
+                    }
+                }
+            }
+        }, false);
+    </script>
+<li id="versions-container" style="padding-left: 5px;padding-bottom: 10px;padding-top: 10px;">
+	Versions<br>
+	<select name="versions" id="versions" class="custom-select custom-select-sm" style="width:50%" onchange="onVersionChange()">
+		<option value="main">main </option>
+		<option value="ccf-0.19.3">ccf-0.19.3 </option>
+		<option value="ccf-0.19.2">ccf-0.19.2 </option>
+		<option value="ccf-0.19.1">ccf-0.19.1 </option>
+		<option value="ccf-0.19.0">ccf-0.19.0 </option>
+		<option value="ccf-0.18.5">ccf-0.18.5 </option>
+		<option value="ccf-0.18.4">ccf-0.18.4 </option>
+		<option value="ccf-0.18.3">ccf-0.18.3 </option>
+		<option value="ccf-0.18.2">ccf-0.18.2 </option>
+		<option value="ccf-0.18.1">ccf-0.18.1 </option>
+		<option value="ccf-0.18.0">ccf-0.18.0 </option>
+		<option value="ccf-0.17.2">ccf-0.17.2 </option>
+		<option value="ccf-0.17.1">ccf-0.17.1 </option>
+		<option value="ccf-0.17.0">ccf-0.17.0 </option>
+		<option value="ccf-0.16.3">ccf-0.16.3 </option>
+	</select>
+</li>
+<script>
 window.addEventListener("DOMContentLoaded",function(){
     const backToCcfEl = document.getElementById("link-ccf-docs");
     const titleEl = document.querySelector('.tsd-page-title>.container');

@@ -344,50 +344,179 @@
   <div class="section" id="key-value-store-api">
 <h1>Key-Value Store API<a class="headerlink" href="#key-value-store-api" title="Permalink to this headline">¶</a></h1>
 <p>This page presents the API that a CCF application must use to read and mutate the replicated key-value store.</p>
-<p>A CCF application should define one or multiple public or private <code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Map</span></code>. Then, each <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">ccf::EndpointRegistry::Endpoint</span></code> should use the <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">kv::Tx</span></code> transaction object to read and write to specific <code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Map</span></code>.</p>
+<p>A CCF application should define one or multiple public or private <a class="reference internal" href="#_CPPv4N2kv3MapE" title="kv::Map"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Map</span></code></a>. Then, each <a class="reference internal" href="../api.html#_CPPv4N3ccf16EndpointRegistry8EndpointE" title="ccf::EndpointRegistry::Endpoint"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">ccf::EndpointRegistry::Endpoint</span></code></a> should use the <a class="reference internal" href="#_CPPv4N2kv2TxE" title="kv::Tx"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">kv::Tx</span></code></a> transaction object to read and write to specific <a class="reference internal" href="#_CPPv4N2kv3MapE" title="kv::Map"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">kv::Map</span></code></a>.</p>
 <div class="section" id="store">
 <h2>Store<a class="headerlink" href="#store" title="Permalink to this headline">¶</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /tmp/tmpdnpnztxg/ce9a8755917f70efcaef4ef496eda72222b83c92/doxygen/xml/index.xml</p>
-</div>
+<dl class="cpp class">
+<dt id="_CPPv4N2kv5StoreE">
+<span id="_CPPv3N2kv5StoreE"></span><span id="_CPPv2N2kv5StoreE"></span><span id="kv::Store"></span><span class="target" id="classkv_1_1Store"></span><em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">Store</span></code> <span class="pre">:</span> <em class="property"><span class="pre">public</span></em> <span class="pre">kv</span><span class="pre">::</span><span class="pre">AbstractStore</span><span class="pre">,</span> <em class="property"><span class="pre">public</span></em> <span class="pre">kv</span><span class="pre">::</span><span class="pre">StoreState</span><a class="headerlink" href="#_CPPv4N2kv5StoreE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
 </div>
 <div class="section" id="map">
 <h2>Map<a class="headerlink" href="#map" title="Permalink to this headline">¶</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygentypedef: Cannot find file: /tmp/tmpdnpnztxg/ce9a8755917f70efcaef4ef496eda72222b83c92/doxygen/xml/index.xml</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenvariable: Cannot find file: /tmp/tmpdnpnztxg/ce9a8755917f70efcaef4ef496eda72222b83c92/doxygen/xml/index.xml</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /tmp/tmpdnpnztxg/ce9a8755917f70efcaef4ef496eda72222b83c92/doxygen/xml/index.xml</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygentypedef: Cannot find file: /tmp/tmpdnpnztxg/ce9a8755917f70efcaef4ef496eda72222b83c92/doxygen/xml/index.xml</p>
-</div>
+<dl class="cpp type">
+<dt id="_CPPv4N2kv7VersionE">
+<span id="_CPPv3N2kv7VersionE"></span><span id="_CPPv2N2kv7VersionE"></span><span class="target" id="kv__types_8h_1a75828f8e4b8183362032501cf54d798d"></span><em class="property"><span class="pre">using</span> </em><code class="sig-prename descclassname"><span class="pre">kv</span><code class="sig-prename descclassname"><span class="pre">::</span></code></code><code class="sig-name descname"><span class="pre">Version</span></code> <span class="pre">=</span> <span class="pre">int64_t</span><a class="headerlink" href="#_CPPv4N2kv7VersionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N2kv9NoVersionE">
+<span id="_CPPv3N2kv9NoVersionE"></span><span id="_CPPv2N2kv9NoVersionE"></span><span id="kv::NoVersion__VersionC"></span><span class="target" id="kv__types_8h_1a11bba90e680b375096d99579821c264a"></span><em class="property"><span class="pre">static</span></em> <em class="property"><span class="pre">const</span></em> <a class="reference internal" href="#_CPPv4N2kv7VersionE" title="kv::Version"><span class="pre">Version</span></a> <code class="sig-prename descclassname"><span class="pre">kv</span><code class="sig-prename descclassname"><span class="pre">::</span></code></code><code class="sig-name descname"><span class="pre">NoVersion</span></code> <span class="pre">=</span> <span class="pre">std</span><span class="pre">::</span><span class="pre">numeric_limits</span><span class="pre">&lt;</span><a class="reference internal" href="#_CPPv4N2kv7VersionE" title="kv::Version"><span class="pre">Version</span></a><span class="pre">&gt;</span><span class="pre">::</span><span class="pre">min</span><span class="pre">(</span><span class="pre">)</span><a class="headerlink" href="#_CPPv4N2kv9NoVersionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp class">
+<dt id="_CPPv4I0000EN2kv8TypedMapE">
+<span id="_CPPv3I0000EN2kv8TypedMapE"></span><span id="_CPPv2I0000EN2kv8TypedMapE"></span><span class="pre">template&lt;</span><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">K</span></code><span class="pre">,</span> <span class="pre">typename</span> <code class="sig-name descname"><span class="pre">V</span></code><span class="pre">,</span> <span class="pre">typename</span> <code class="sig-name descname"><span class="pre">KSerialiser</span></code><span class="pre">,</span> <span class="pre">typename</span> <code class="sig-name descname"><span class="pre">VSerialiser</span></code><span class="pre">&gt;</span><br /><span class="target" id="classkv_1_1TypedMap"></span><em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">TypedMap</span></code> <span class="pre">:</span> <em class="property"><span class="pre">public</span></em> <span class="pre">kv</span><span class="pre">::</span><span class="pre">NamedMap</span><a class="headerlink" href="#_CPPv4I0000EN2kv8TypedMapE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt id="_CPPv4N2kv3MapE">
+<span id="_CPPv3N2kv3MapE"></span><span id="_CPPv2N2kv3MapE"></span><span class="target" id="map_8h_1ad598fe605cf9cab8a6783f64ed7e0fb0"></span><em class="property"><span class="pre">using</span> </em><code class="sig-prename descclassname"><span class="pre">kv</span><code class="sig-prename descclassname"><span class="pre">::</span></code></code><code class="sig-name descname"><span class="pre">Map</span></code> <span class="pre">=</span> <span class="pre">MsgPackSerialisedMap</span><span class="pre">&lt;</span><span class="pre">K</span><span class="pre">,</span> <span class="pre">V</span><span class="pre">&gt;</span><a class="headerlink" href="#_CPPv4N2kv3MapE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Short name for default-serialised maps, using msgpack serialisers. Support for custom types can be added through the MSGPACK_DEFINE macro </p>
+</dd></dl>
+
 </div>
 <div class="section" id="transaction">
 <h2>Transaction<a class="headerlink" href="#transaction" title="Permalink to this headline">¶</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /tmp/tmpdnpnztxg/ce9a8755917f70efcaef4ef496eda72222b83c92/doxygen/xml/index.xml</p>
+<dl class="cpp class">
+<dt id="_CPPv4N2kv10ReadOnlyTxE">
+<span id="_CPPv3N2kv10ReadOnlyTxE"></span><span id="_CPPv2N2kv10ReadOnlyTxE"></span><span id="kv::ReadOnlyTx"></span><span class="target" id="classkv_1_1ReadOnlyTx"></span><em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">kv</span><code class="sig-prename descclassname"><span class="pre">::</span></code></code><code class="sig-name descname"><span class="pre">ReadOnlyTx</span></code> <span class="pre">:</span> <em class="property"><span class="pre">public</span></em> <span class="pre">kv</span><span class="pre">::</span><span class="pre">BaseTx</span><a class="headerlink" href="#_CPPv4N2kv10ReadOnlyTxE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Subclassed by <a class="reference internal" href="#classkv_1_1Tx"><span class="std std-ref">kv::Tx</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4I0EN2kv10ReadOnlyTx18get_read_only_viewEPN1M14ReadOnlyTxViewER1M">
+<span id="_CPPv3I0EN2kv10ReadOnlyTx18get_read_only_viewER1M"></span><span id="_CPPv2I0EN2kv10ReadOnlyTx18get_read_only_viewER1M"></span><span class="pre">template&lt;</span><span class="pre">class</span> <code class="sig-name descname"><span class="pre">M</span></code><span class="pre">&gt;</span><br /><span class="target" id="classkv_1_1ReadOnlyTx_1ac7cbe224c1b0c8d0a7d2d612aa72617f"></span><em class="property"><span class="pre">inline</span></em> <a class="reference internal" href="#_CPPv4I0EN2kv10ReadOnlyTx18get_read_only_viewEPN1M14ReadOnlyTxViewER1M" title="kv::ReadOnlyTx::get_read_only_view::M"><span class="pre">M</span></a><span class="pre">::</span><span class="pre">ReadOnlyTxView</span> <span class="pre">*</span><code class="sig-name descname"><span class="pre">get_read_only_view</span></code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0EN2kv10ReadOnlyTx18get_read_only_viewEPN1M14ReadOnlyTxViewER1M" title="kv::ReadOnlyTx::get_read_only_view::M"><span class="pre">M</span></a> <span class="pre">&amp;</span><em><span class="pre">m</span></em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN2kv10ReadOnlyTx18get_read_only_viewEPN1M14ReadOnlyTxViewER1M" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a read-only transaction view on a map.</p>
+<p>This adds the map to the transaction set if it is not yet present.</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">m</span></code>: Map </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4I0EN2kv10ReadOnlyTx18get_read_only_viewEPN1M14ReadOnlyTxViewERKNSt6stringE">
+<span id="_CPPv3I0EN2kv10ReadOnlyTx18get_read_only_viewERKNSt6stringE"></span><span id="_CPPv2I0EN2kv10ReadOnlyTx18get_read_only_viewERKNSt6stringE"></span><span class="pre">template&lt;</span><span class="pre">class</span> <code class="sig-name descname"><span class="pre">M</span></code><span class="pre">&gt;</span><br /><span class="target" id="classkv_1_1ReadOnlyTx_1a2063a80db8abf1e3a086ead1ae3765f4"></span><em class="property"><span class="pre">inline</span></em> <a class="reference internal" href="#_CPPv4I0EN2kv10ReadOnlyTx18get_read_only_viewEPN1M14ReadOnlyTxViewERKNSt6stringE" title="kv::ReadOnlyTx::get_read_only_view::M"><span class="pre">M</span></a><span class="pre">::</span><span class="pre">ReadOnlyTxView</span> <span class="pre">*</span><code class="sig-name descname"><span class="pre">get_read_only_view</span></code><span class="sig-paren">(</span><em class="property"><span class="pre">const</span></em> <span class="pre">std</span><span class="pre">::</span><span class="pre">string</span> <span class="pre">&amp;</span><em><span class="pre">map_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN2kv10ReadOnlyTx18get_read_only_viewEPN1M14ReadOnlyTxViewERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a read-only transaction view on a map by name.</p>
+<p>This adds the map to the transaction set if it is not yet present, and creates the map if it does not yet exist.</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">map_name</span></code>: Name of map </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4I0DpEN2kv10ReadOnlyTx18get_read_only_viewENSt5tupleIPN1M14ReadOnlyTxViewEDpPN2Ms14ReadOnlyTxViewEEER1MDpR2Ms">
+<span id="_CPPv3I0DpEN2kv10ReadOnlyTx18get_read_only_viewER1MDpR2Ms"></span><span id="_CPPv2I0DpEN2kv10ReadOnlyTx18get_read_only_viewER1MDpR2Ms"></span><span class="pre">template&lt;</span><span class="pre">class</span> <code class="sig-name descname"><span class="pre">M</span></code><span class="pre">,</span> <span class="pre">class</span> <span class="pre">...</span><code class="sig-name descname"><span class="pre">Ms</span></code><span class="pre">&gt;</span><br /><span class="target" id="classkv_1_1ReadOnlyTx_1a8d9c387cdc0cb554fe1ded38583c6d3a"></span><em class="property"><span class="pre">inline</span></em> <span class="pre">std</span><span class="pre">::</span><span class="pre">tuple</span><span class="pre">&lt;</span><em class="property"><span class="pre">typename</span></em> <a class="reference internal" href="#_CPPv4I0DpEN2kv10ReadOnlyTx18get_read_only_viewENSt5tupleIPN1M14ReadOnlyTxViewEDpPN2Ms14ReadOnlyTxViewEEER1MDpR2Ms" title="kv::ReadOnlyTx::get_read_only_view::M"><span class="pre">M</span></a><span class="pre">::</span><span class="pre">ReadOnlyTxView</span><span class="pre">*</span><span class="pre">,</span> <em class="property"><span class="pre">typename</span></em> <a class="reference internal" href="#_CPPv4I0DpEN2kv10ReadOnlyTx18get_read_only_viewENSt5tupleIPN1M14ReadOnlyTxViewEDpPN2Ms14ReadOnlyTxViewEEER1MDpR2Ms" title="kv::ReadOnlyTx::get_read_only_view::Ms"><span class="pre">Ms</span></a><span class="pre">::</span><span class="pre">ReadOnlyTxView</span><span class="pre">*</span><span class="pre">...</span><span class="pre">&gt;</span> <code class="sig-name descname"><span class="pre">get_read_only_view</span></code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0DpEN2kv10ReadOnlyTx18get_read_only_viewENSt5tupleIPN1M14ReadOnlyTxViewEDpPN2Ms14ReadOnlyTxViewEEER1MDpR2Ms" title="kv::ReadOnlyTx::get_read_only_view::M"><span class="pre">M</span></a> <span class="pre">&amp;</span><em><span class="pre">m</span></em>, <a class="reference internal" href="#_CPPv4I0DpEN2kv10ReadOnlyTx18get_read_only_viewENSt5tupleIPN1M14ReadOnlyTxViewEDpPN2Ms14ReadOnlyTxViewEEER1MDpR2Ms" title="kv::ReadOnlyTx::get_read_only_view::Ms"><span class="pre">Ms</span></a><span class="pre">&amp;</span><span class="pre">...</span> <em><span class="pre">ms</span></em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0DpEN2kv10ReadOnlyTx18get_read_only_viewENSt5tupleIPN1M14ReadOnlyTxViewEDpPN2Ms14ReadOnlyTxViewEEER1MDpR2Ms" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get read-only transaction views over multiple maps.</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">m</span></code>: Map </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ms</span></code>: Map </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4I0DpDpEN2kv10ReadOnlyTx18get_read_only_viewENSt5tupleIPN1M6TxViewEDpPN2Ms6TxViewEEERKNSt6stringEDpRK2Ts">
+<span id="_CPPv3I0DpDpEN2kv10ReadOnlyTx18get_read_only_viewERKNSt6stringEDpRK2Ts"></span><span id="_CPPv2I0DpDpEN2kv10ReadOnlyTx18get_read_only_viewERKNSt6stringEDpRK2Ts"></span><span class="pre">template&lt;</span><span class="pre">class</span> <code class="sig-name descname"><span class="pre">M</span></code><span class="pre">,</span> <span class="pre">class</span> <span class="pre">...</span><code class="sig-name descname"><span class="pre">Ms</span></code><span class="pre">,</span> <span class="pre">class</span> <span class="pre">...</span><code class="sig-name descname"><span class="pre">Ts</span></code><span class="pre">&gt;</span><br /><span class="target" id="classkv_1_1ReadOnlyTx_1a0582acfbeda2604db1a77deb31db8202"></span><em class="property"><span class="pre">inline</span></em> <span class="pre">std</span><span class="pre">::</span><span class="pre">tuple</span><span class="pre">&lt;</span><em class="property"><span class="pre">typename</span></em> <a class="reference internal" href="#_CPPv4I0DpDpEN2kv10ReadOnlyTx18get_read_only_viewENSt5tupleIPN1M6TxViewEDpPN2Ms6TxViewEEERKNSt6stringEDpRK2Ts" title="kv::ReadOnlyTx::get_read_only_view::M"><span class="pre">M</span></a><span class="pre">::</span><span class="pre">TxView</span><span class="pre">*</span><span class="pre">,</span> <em class="property"><span class="pre">typename</span></em> <a class="reference internal" href="#_CPPv4I0DpDpEN2kv10ReadOnlyTx18get_read_only_viewENSt5tupleIPN1M6TxViewEDpPN2Ms6TxViewEEERKNSt6stringEDpRK2Ts" title="kv::ReadOnlyTx::get_read_only_view::Ms"><span class="pre">Ms</span></a><span class="pre">::</span><span class="pre">TxView</span><span class="pre">*</span><span class="pre">...</span><span class="pre">&gt;</span> <code class="sig-name descname"><span class="pre">get_read_only_view</span></code><span class="sig-paren">(</span><em class="property"><span class="pre">const</span></em> <span class="pre">std</span><span class="pre">::</span><span class="pre">string</span> <span class="pre">&amp;</span><em><span class="pre">map_name</span></em>, <em class="property"><span class="pre">const</span></em> <a class="reference internal" href="#_CPPv4I0DpDpEN2kv10ReadOnlyTx18get_read_only_viewENSt5tupleIPN1M6TxViewEDpPN2Ms6TxViewEEERKNSt6stringEDpRK2Ts" title="kv::ReadOnlyTx::get_read_only_view::Ts"><span class="pre">Ts</span></a><span class="pre">&amp;</span><span class="pre">...</span> <em><span class="pre">names</span></em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0DpDpEN2kv10ReadOnlyTx18get_read_only_viewENSt5tupleIPN1M6TxViewEDpPN2Ms6TxViewEEERKNSt6stringEDpRK2Ts" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get read-only transaction views over multiple maps by name. This will create the maps if they do not exist.</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">map_name</span></code>: Name of first map to retrieve </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">names</span></code>: Names of additional maps </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /tmp/tmpdnpnztxg/ce9a8755917f70efcaef4ef496eda72222b83c92/doxygen/xml/index.xml</p>
+</dd></dl>
+
+<dl class="cpp class">
+<dt id="_CPPv4N2kv2TxE">
+<span id="_CPPv3N2kv2TxE"></span><span id="_CPPv2N2kv2TxE"></span><span id="kv::Tx"></span><span class="target" id="classkv_1_1Tx"></span><em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">kv</span><code class="sig-prename descclassname"><span class="pre">::</span></code></code><code class="sig-name descname"><span class="pre">Tx</span></code> <span class="pre">:</span> <em class="property"><span class="pre">public</span></em> <span class="pre">kv</span><span class="pre">::</span><a class="reference internal" href="#_CPPv4N2kv10ReadOnlyTxE" title="kv::ReadOnlyTx"><span class="pre">ReadOnlyTx</span></a><a class="headerlink" href="#_CPPv4N2kv2TxE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Subclassed by kv::ReservedTx</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4I0EN2kv2Tx8get_viewEPN1M6TxViewER1M">
+<span id="_CPPv3I0EN2kv2Tx8get_viewER1M"></span><span id="_CPPv2I0EN2kv2Tx8get_viewER1M"></span><span class="pre">template&lt;</span><span class="pre">class</span> <code class="sig-name descname"><span class="pre">M</span></code><span class="pre">&gt;</span><br /><span class="target" id="classkv_1_1Tx_1a075a5f09a1f5b361d040ca21213fac1f"></span><em class="property"><span class="pre">inline</span></em> <a class="reference internal" href="#_CPPv4I0EN2kv2Tx8get_viewEPN1M6TxViewER1M" title="kv::Tx::get_view::M"><span class="pre">M</span></a><span class="pre">::</span><span class="pre">TxView</span> <span class="pre">*</span><code class="sig-name descname"><span class="pre">get_view</span></code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0EN2kv2Tx8get_viewEPN1M6TxViewER1M" title="kv::Tx::get_view::M"><span class="pre">M</span></a> <span class="pre">&amp;</span><em><span class="pre">m</span></em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN2kv2Tx8get_viewEPN1M6TxViewER1M" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a transaction view on a map.</p>
+<p>This adds the map to the transaction set if it is not yet present.</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">m</span></code>: Map </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4I0EN2kv2Tx8get_viewEPN1M6TxViewERKNSt6stringE">
+<span id="_CPPv3I0EN2kv2Tx8get_viewERKNSt6stringE"></span><span id="_CPPv2I0EN2kv2Tx8get_viewERKNSt6stringE"></span><span class="pre">template&lt;</span><span class="pre">class</span> <code class="sig-name descname"><span class="pre">M</span></code><span class="pre">&gt;</span><br /><span class="target" id="classkv_1_1Tx_1a64d8cdb481ff9e4e25bc6bcaab1be04a"></span><em class="property"><span class="pre">inline</span></em> <a class="reference internal" href="#_CPPv4I0EN2kv2Tx8get_viewEPN1M6TxViewERKNSt6stringE" title="kv::Tx::get_view::M"><span class="pre">M</span></a><span class="pre">::</span><span class="pre">TxView</span> <span class="pre">*</span><code class="sig-name descname"><span class="pre">get_view</span></code><span class="sig-paren">(</span><em class="property"><span class="pre">const</span></em> <span class="pre">std</span><span class="pre">::</span><span class="pre">string</span> <span class="pre">&amp;</span><em><span class="pre">map_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN2kv2Tx8get_viewEPN1M6TxViewERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a transaction view on a map by name</p>
+<p>This adds the map to the transaction set if it is not yet present, and creates the map if it does not yet exist.</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">map_name</span></code>: Name of map </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4I0DpEN2kv2Tx8get_viewENSt5tupleIPN1M6TxViewEDpPN2Ms6TxViewEEER1MDpR2Ms">
+<span id="_CPPv3I0DpEN2kv2Tx8get_viewER1MDpR2Ms"></span><span id="_CPPv2I0DpEN2kv2Tx8get_viewER1MDpR2Ms"></span><span class="pre">template&lt;</span><span class="pre">class</span> <code class="sig-name descname"><span class="pre">M</span></code><span class="pre">,</span> <span class="pre">class</span> <span class="pre">...</span><code class="sig-name descname"><span class="pre">Ms</span></code><span class="pre">&gt;</span><br /><span class="target" id="classkv_1_1Tx_1a788a3f0b654757135471913f83491d85"></span><em class="property"><span class="pre">inline</span></em> <span class="pre">std</span><span class="pre">::</span><span class="pre">tuple</span><span class="pre">&lt;</span><em class="property"><span class="pre">typename</span></em> <a class="reference internal" href="#_CPPv4I0DpEN2kv2Tx8get_viewENSt5tupleIPN1M6TxViewEDpPN2Ms6TxViewEEER1MDpR2Ms" title="kv::Tx::get_view::M"><span class="pre">M</span></a><span class="pre">::</span><span class="pre">TxView</span><span class="pre">*</span><span class="pre">,</span> <em class="property"><span class="pre">typename</span></em> <a class="reference internal" href="#_CPPv4I0DpEN2kv2Tx8get_viewENSt5tupleIPN1M6TxViewEDpPN2Ms6TxViewEEER1MDpR2Ms" title="kv::Tx::get_view::Ms"><span class="pre">Ms</span></a><span class="pre">::</span><span class="pre">TxView</span><span class="pre">*</span><span class="pre">...</span><span class="pre">&gt;</span> <code class="sig-name descname"><span class="pre">get_view</span></code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0DpEN2kv2Tx8get_viewENSt5tupleIPN1M6TxViewEDpPN2Ms6TxViewEEER1MDpR2Ms" title="kv::Tx::get_view::M"><span class="pre">M</span></a> <span class="pre">&amp;</span><em><span class="pre">m</span></em>, <a class="reference internal" href="#_CPPv4I0DpEN2kv2Tx8get_viewENSt5tupleIPN1M6TxViewEDpPN2Ms6TxViewEEER1MDpR2Ms" title="kv::Tx::get_view::Ms"><span class="pre">Ms</span></a><span class="pre">&amp;</span><span class="pre">...</span> <em><span class="pre">ms</span></em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0DpEN2kv2Tx8get_viewENSt5tupleIPN1M6TxViewEDpPN2Ms6TxViewEEER1MDpR2Ms" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get transaction views over multiple maps.</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">m</span></code>: Map </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ms</span></code>: Map </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4I0DpDpEN2kv2Tx8get_viewENSt5tupleIPN1M6TxViewEDpPN2Ms6TxViewEEERKNSt6stringEDpRK2Ts">
+<span id="_CPPv3I0DpDpEN2kv2Tx8get_viewERKNSt6stringEDpRK2Ts"></span><span id="_CPPv2I0DpDpEN2kv2Tx8get_viewERKNSt6stringEDpRK2Ts"></span><span class="pre">template&lt;</span><span class="pre">class</span> <code class="sig-name descname"><span class="pre">M</span></code><span class="pre">,</span> <span class="pre">class</span> <span class="pre">...</span><code class="sig-name descname"><span class="pre">Ms</span></code><span class="pre">,</span> <span class="pre">class</span> <span class="pre">...</span><code class="sig-name descname"><span class="pre">Ts</span></code><span class="pre">&gt;</span><br /><span class="target" id="classkv_1_1Tx_1aa03602c5bc58599fb5ca40c44dc00537"></span><em class="property"><span class="pre">inline</span></em> <span class="pre">std</span><span class="pre">::</span><span class="pre">tuple</span><span class="pre">&lt;</span><em class="property"><span class="pre">typename</span></em> <a class="reference internal" href="#_CPPv4I0DpDpEN2kv2Tx8get_viewENSt5tupleIPN1M6TxViewEDpPN2Ms6TxViewEEERKNSt6stringEDpRK2Ts" title="kv::Tx::get_view::M"><span class="pre">M</span></a><span class="pre">::</span><span class="pre">TxView</span><span class="pre">*</span><span class="pre">,</span> <em class="property"><span class="pre">typename</span></em> <a class="reference internal" href="#_CPPv4I0DpDpEN2kv2Tx8get_viewENSt5tupleIPN1M6TxViewEDpPN2Ms6TxViewEEERKNSt6stringEDpRK2Ts" title="kv::Tx::get_view::Ms"><span class="pre">Ms</span></a><span class="pre">::</span><span class="pre">TxView</span><span class="pre">*</span><span class="pre">...</span><span class="pre">&gt;</span> <code class="sig-name descname"><span class="pre">get_view</span></code><span class="sig-paren">(</span><em class="property"><span class="pre">const</span></em> <span class="pre">std</span><span class="pre">::</span><span class="pre">string</span> <span class="pre">&amp;</span><em><span class="pre">map_name</span></em>, <em class="property"><span class="pre">const</span></em> <a class="reference internal" href="#_CPPv4I0DpDpEN2kv2Tx8get_viewENSt5tupleIPN1M6TxViewEDpPN2Ms6TxViewEEERKNSt6stringEDpRK2Ts" title="kv::Tx::get_view::Ts"><span class="pre">Ts</span></a><span class="pre">&amp;</span><span class="pre">...</span> <em><span class="pre">names</span></em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0DpDpEN2kv2Tx8get_viewENSt5tupleIPN1M6TxViewEDpPN2Ms6TxViewEEERKNSt6stringEDpRK2Ts" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get transaction views over multiple maps by name. This will create the maps if they do not exist.</p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">map_name</span></code>: Name of first map to retrieve </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">names</span></code>: Names of additional maps </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </div>
 <div class="section" id="transaction-view">
 <h2>Transaction View<a class="headerlink" href="#transaction-view" title="Permalink to this headline">¶</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /tmp/tmpdnpnztxg/ce9a8755917f70efcaef4ef496eda72222b83c92/doxygen/xml/index.xml</p>
-</div>
+<dl class="cpp class">
+<dt id="_CPPv4I0000EN2kv6TxViewE">
+<span id="_CPPv3I0000EN2kv6TxViewE"></span><span id="_CPPv2I0000EN2kv6TxViewE"></span><span class="pre">template&lt;</span><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">K</span></code><span class="pre">,</span> <span class="pre">typename</span> <code class="sig-name descname"><span class="pre">V</span></code><span class="pre">,</span> <span class="pre">typename</span> <code class="sig-name descname"><span class="pre">KSerialiser</span></code><span class="pre">,</span> <span class="pre">typename</span> <code class="sig-name descname"><span class="pre">VSerialiser</span></code><span class="pre">&gt;</span><br /><span class="target" id="classkv_1_1TxView"></span><em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">TxView</span></code> <span class="pre">:</span> <em class="property"><span class="pre">public</span></em> <span class="pre">kv</span><span class="pre">::</span><span class="pre">ReadOnlyTxView</span><span class="pre">&lt;</span><a class="reference internal" href="#_CPPv4I0000EN2kv6TxViewE" title="kv::TxView::K"><span class="pre">K</span></a><span class="pre">,</span> <a class="reference internal" href="#_CPPv4I0000EN2kv6TxViewE" title="kv::TxView::V"><span class="pre">V</span></a><span class="pre">,</span> <a class="reference internal" href="#_CPPv4I0000EN2kv6TxViewE" title="kv::TxView::KSerialiser"><span class="pre">KSerialiser</span></a><span class="pre">,</span> <a class="reference internal" href="#_CPPv4I0000EN2kv6TxViewE" title="kv::TxView::VSerialiser"><span class="pre">VSerialiser</span></a><span class="pre">&gt;</span><a class="headerlink" href="#_CPPv4I0000EN2kv6TxViewE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
 </div>
 </div>
 
