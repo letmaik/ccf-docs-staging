@@ -448,17 +448,12 @@ share the same npm package dependencies.</p>
 One of them is the <a class="reference external" href="../js/ccf-app"><code class="xref docutils literal notranslate"><span class="pre">ccf-app</span></code></a> package.
 This package is referenced locally using <code class="docutils literal notranslate"><span class="pre">file:</span></code>.
 You should replace this with a reference to a published version (adjust the version number accordingly):</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;ccf-app&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/microsoft/CCF/releases/download/ccf-0.19.3/ccf-app-0.19.3.tgz&quot;</span><span class="p">,</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;@microsoft/ccf-app&quot;</span><span class="p">:</span> <span class="s2">&quot;~0.19.4&quot;</span><span class="p">,</span>
 </pre></div>
 </div>
 <p>Now you can continue with installing all dependencies:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ npm install
 </pre></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Currently, <a class="reference external" href="../js/ccf-app"><code class="xref docutils literal notranslate"><span class="pre">ccf-app</span></code></a> is not published on npm.
-This may change in the future.</p>
 </div>
 </div>
 <div class="section" id="controllers">

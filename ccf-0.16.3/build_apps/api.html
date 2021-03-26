@@ -337,307 +337,49 @@
 <p>A CCF application is composed of the following:</p>
 <ul class="simple">
 <li><p>The <a class="reference internal" href="#application-entry-point"><span class="std std-ref">Application Entry Point</span></a> which registers the application in CCF.</p></li>
-<li><p>A collection of <a class="reference internal" href="#_CPPv4N3ccf16EndpointRegistry8EndpointE" title="ccf::EndpointRegistry::Endpoint"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">endpoints</span></code></a> handling HTTP requests and grouped in a single <a class="reference internal" href="#_CPPv4N3ccf16EndpointRegistryE" title="ccf::EndpointRegistry"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">ccf::EndpointRegistry</span></code></a>. An <a class="reference internal" href="#_CPPv4N3ccf16EndpointRegistry8EndpointE" title="ccf::EndpointRegistry::Endpoint"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">endpoint</span></code></a> reads and writes to the key-value store via the <a class="reference internal" href="kv/api.html#key-value-store-api"><span class="std std-ref">Key-Value Store API</span></a>.</p></li>
+<li><p>A collection of <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">endpoints</span></code> handling HTTP requests and grouped in a single <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">ccf::EndpointRegistry</span></code>. An <code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">endpoint</span></code> reads and writes to the key-value store via the <a class="reference internal" href="kv/api.html#key-value-store-api"><span class="std std-ref">Key-Value Store API</span></a>.</p></li>
 </ul>
 <div class="section" id="application-entry-point">
 <h2>Application Entry Point<a class="headerlink" href="#application-entry-point" title="Permalink to this headline">¶</a></h2>
-<dl class="cpp class">
-<dt id="_CPPv4N3ccf15UserRpcFrontendE">
-<span id="_CPPv3N3ccf15UserRpcFrontendE"></span><span id="_CPPv2N3ccf15UserRpcFrontendE"></span><span id="ccf::UserRpcFrontend"></span><span class="target" id="classccf_1_1UserRpcFrontend"></span><em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">UserRpcFrontend</span></code> <span class="pre">:</span> <em class="property"><span class="pre">public</span></em> <span class="pre">ccf</span><span class="pre">::</span><span class="pre">RpcFrontend</span><a class="headerlink" href="#_CPPv4N3ccf15UserRpcFrontendE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>The CCF application must be an instance of <a class="reference internal" href="#classccf_1_1UserRpcFrontend"><span class="std std-ref">UserRpcFrontend</span></a> </p>
-<p>Subclassed by ccf::SimpleUserRpcFrontend, ccfapp::JS, ccfapp::SmallBank</p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt id="_CPPv4N6ccfapp15get_rpc_handlerER13NetworkTablesRN6ccfapp19AbstractNodeContextE">
-<span id="_CPPv3N6ccfapp15get_rpc_handlerER13NetworkTablesRN6ccfapp19AbstractNodeContextE"></span><span id="_CPPv2N6ccfapp15get_rpc_handlerER13NetworkTablesRN6ccfapp19AbstractNodeContextE"></span><span id="ccfapp::get_rpc_handler__NetworkTablesR.ccfapp::AbstractNodeContextR"></span><span class="target" id="js__generic_8cpp_1a2484bae9bbd2403da548654f66d4e006"></span><span class="pre">std</span><span class="pre">::</span><span class="pre">shared_ptr</span><span class="pre">&lt;</span><span class="pre">ccf</span><span class="pre">::</span><a class="reference internal" href="#_CPPv4N3ccf15UserRpcFrontendE" title="ccf::UserRpcFrontend"><span class="pre">UserRpcFrontend</span></a><span class="pre">&gt;</span> <code class="sig-prename descclassname"><span class="pre">ccfapp</span><code class="sig-prename descclassname"><span class="pre">::</span></code></code><code class="sig-name descname"><span class="pre">get_rpc_handler</span></code><span class="sig-paren">(</span><span class="pre">NetworkTables</span> <span class="pre">&amp;</span><em><span class="pre">network</span></em>, <span class="pre">ccfapp</span><span class="pre">::</span><span class="pre">AbstractNodeContext</span><span class="pre">&amp;</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6ccfapp15get_rpc_handlerER13NetworkTablesRN6ccfapp19AbstractNodeContextE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>To be implemented by the application to be registered by CCF.</p>
-<p><dl class="simple">
-<dt><strong>Return</strong></dt><dd><p>Shared pointer to the application handler instance </p>
-</dd>
-<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">network</span></code>: Access to the network’s replicated tables </p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">context</span></code>: Access to node and host services</p></li>
-</ul>
-</dd>
-</dl>
-</p>
-</dd></dl>
-
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>doxygenclass: Cannot find file: /tmp/tmpj7_at_np/e30b576bdd89fc4d2c416e5717d3a1bb5c5de446/doxygen/xml/index.xml</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>doxygenfunction: Cannot find file: /tmp/tmpj7_at_np/e30b576bdd89fc4d2c416e5717d3a1bb5c5de446/doxygen/xml/index.xml</p>
+</div>
 </div>
 <div class="section" id="application-endpoint-registration">
 <h2>Application Endpoint Registration<a class="headerlink" href="#application-endpoint-registration" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="endpoint-registry">
 <h3>Endpoint Registry<a class="headerlink" href="#endpoint-registry" title="Permalink to this headline">¶</a></h3>
-<dl class="cpp class">
-<dt id="_CPPv4N3ccf16EndpointRegistryE">
-<span id="_CPPv3N3ccf16EndpointRegistryE"></span><span id="_CPPv2N3ccf16EndpointRegistryE"></span><span id="ccf::EndpointRegistry"></span><span class="target" id="classccf_1_1EndpointRegistry"></span><em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">ccf</span><code class="sig-prename descclassname"><span class="pre">::</span></code></code><code class="sig-name descname"><span class="pre">EndpointRegistry</span></code><a class="headerlink" href="#_CPPv4N3ccf16EndpointRegistryE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>The <a class="reference internal" href="#classccf_1_1EndpointRegistry"><span class="std std-ref">EndpointRegistry</span></a> records the user-defined endpoints for a given CCF application. </p>
-<p>Subclassed by ccf::CommonEndpointRegistry</p>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric">Public Functions</p>
-<dl class="cpp function">
-<dt id="_CPPv4N3ccf16EndpointRegistry7installER8Endpoint">
-<span id="_CPPv3N3ccf16EndpointRegistry7installER8Endpoint"></span><span id="_CPPv2N3ccf16EndpointRegistry7installER8Endpoint"></span><span id="ccf::EndpointRegistry::install__EndpointR"></span><span class="target" id="classccf_1_1EndpointRegistry_1ae138fefa6375d96077e98e0c55a86ab3"></span><em class="property"><span class="pre">inline</span></em> <span class="pre">void</span> <code class="sig-name descname"><span class="pre">install</span></code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N3ccf16EndpointRegistry8EndpointE" title="ccf::EndpointRegistry::Endpoint"><span class="pre">Endpoint</span></a> <span class="pre">&amp;</span><em><span class="pre">endpoint</span></em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3ccf16EndpointRegistry7installER8Endpoint" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Install the given endpoint, using its method and verb</p>
-<p>If an implementation is already installed for this method and verb, it will be replaced. <dl class="simple">
-<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">endpoint</span></code>: <a class="reference internal" href="#structccf_1_1EndpointRegistry_1_1Endpoint"><span class="std std-ref">Endpoint</span></a> object describing the new resource to install </p></li>
-</ul>
-</dd>
-</dl>
-</p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt id="_CPPv4N3ccf16EndpointRegistry11set_defaultE16EndpointFunctionRK13AuthnPolicies">
-<span id="_CPPv3N3ccf16EndpointRegistry11set_defaultE16EndpointFunctionRK13AuthnPolicies"></span><span id="_CPPv2N3ccf16EndpointRegistry11set_defaultE16EndpointFunctionRK13AuthnPolicies"></span><span id="ccf::EndpointRegistry::set_default__EndpointFunction.AuthnPoliciesCR"></span><span class="target" id="classccf_1_1EndpointRegistry_1a8401899071c33b3b4124d8ecf68fdaea"></span><em class="property"><span class="pre">inline</span></em> <span class="pre">void</span> <code class="sig-name descname"><span class="pre">set_default</span></code><span class="sig-paren">(</span><span class="pre">EndpointFunction</span> <em><span class="pre">f</span></em>, <em class="property"><span class="pre">const</span></em> <span class="pre">AuthnPolicies</span> <span class="pre">&amp;</span><em><span class="pre">ap</span></em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3ccf16EndpointRegistry11set_defaultE16EndpointFunctionRK13AuthnPolicies" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Set a default EndpointFunction</p>
-<p>The default EndpointFunction is only invoked if no specific EndpointFunction was found.</p>
-<p><dl class="simple">
-<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">f</span></code>: Method implementation </p></li>
-</ul>
-</dd>
-</dl>
-</p>
-</dd></dl>
-
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>doxygenclass: Cannot find file: /tmp/tmpj7_at_np/e30b576bdd89fc4d2c416e5717d3a1bb5c5de446/doxygen/xml/index.xml</p>
 </div>
-</dd></dl>
-
 </div>
 <div class="section" id="endpoint">
 <h3>Endpoint<a class="headerlink" href="#endpoint" title="Permalink to this headline">¶</a></h3>
-<dl class="cpp struct">
-<dt id="_CPPv4N3ccf16EndpointRegistry8EndpointE">
-<span id="_CPPv3N3ccf16EndpointRegistry8EndpointE"></span><span id="_CPPv2N3ccf16EndpointRegistry8EndpointE"></span><span id="ccf::EndpointRegistry::Endpoint"></span><span class="target" id="structccf_1_1EndpointRegistry_1_1Endpoint"></span><em class="property"><span class="pre">struct</span> </em><code class="sig-prename descclassname"><span class="pre">ccf</span><span class="pre">::</span><a class="reference internal" href="#_CPPv4N3ccf16EndpointRegistryE" title="ccf::EndpointRegistry"><span class="pre">EndpointRegistry</span></a><code class="sig-prename descclassname"><span class="pre">::</span></code></code><code class="sig-name descname"><span class="pre">Endpoint</span></code> <span class="pre">:</span> <em class="property"><span class="pre">public</span></em> <span class="pre">ccf</span><span class="pre">::</span><span class="pre">endpoints</span><span class="pre">::</span><span class="pre">EndpointDefinition</span><a class="headerlink" href="#_CPPv4N3ccf16EndpointRegistry8EndpointE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>An <a class="reference internal" href="#structccf_1_1EndpointRegistry_1_1Endpoint"><span class="std std-ref">Endpoint</span></a> represents a user-defined resource that can be invoked by authorised users via HTTP requests, over TLS. An <a class="reference internal" href="#structccf_1_1EndpointRegistry_1_1Endpoint"><span class="std std-ref">Endpoint</span></a> is accessible at a specific verb and URI, e.g. POST /app/accounts or GET /app/records.</p>
-<p>Endpoints can read from and mutate the state of the replicated key-value store.</p>
-<p>A CCF application is a collection of Endpoints recorded in the application’s <a class="reference internal" href="#classccf_1_1EndpointRegistry"><span class="std std-ref">EndpointRegistry</span></a>. </p>
-<p>Subclassed by ccf::EndpointRegistry::PathTemplatedEndpoint</p>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric">Public Functions</p>
-<dl class="cpp function">
-<dt id="_CPPv4N3ccf16EndpointRegistry8Endpoint18set_openapi_hiddenEb">
-<span id="_CPPv3N3ccf16EndpointRegistry8Endpoint18set_openapi_hiddenEb"></span><span id="_CPPv2N3ccf16EndpointRegistry8Endpoint18set_openapi_hiddenEb"></span><span id="ccf::EndpointRegistry::Endpoint::set_openapi_hidden__b"></span><span class="target" id="structccf_1_1EndpointRegistry_1_1Endpoint_1a4c0915f5f0cd542da22a5139d339d71d"></span><em class="property"><span class="pre">inline</span></em> <a class="reference internal" href="#_CPPv4N3ccf16EndpointRegistry8EndpointE" title="ccf::EndpointRegistry::Endpoint"><span class="pre">Endpoint</span></a> <span class="pre">&amp;</span><code class="sig-name descname"><span class="pre">set_openapi_hidden</span></code><span class="sig-paren">(</span><span class="pre">bool</span> <em><span class="pre">hidden</span></em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3ccf16EndpointRegistry8Endpoint18set_openapi_hiddenEb" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Whether the endpoint should be omitted from the OpenAPI document.</p>
-<p><dl class="simple">
-<dt><strong>Return</strong></dt><dd><p>This <a class="reference internal" href="#structccf_1_1EndpointRegistry_1_1Endpoint"><span class="std std-ref">Endpoint</span></a> for further modification </p>
-</dd>
-</dl>
-</p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt id="_CPPv4N3ccf16EndpointRegistry8Endpoint17set_params_schemaERKN8nlohmann4jsonE">
-<span id="_CPPv3N3ccf16EndpointRegistry8Endpoint17set_params_schemaERKN8nlohmann4jsonE"></span><span id="_CPPv2N3ccf16EndpointRegistry8Endpoint17set_params_schemaERKN8nlohmann4jsonE"></span><span id="ccf::EndpointRegistry::Endpoint::set_params_schema__nlohmann::jsonCR"></span><span class="target" id="structccf_1_1EndpointRegistry_1_1Endpoint_1a51d0e43c80f4fcf23a6325b98df22c10"></span><em class="property"><span class="pre">inline</span></em> <a class="reference internal" href="#_CPPv4N3ccf16EndpointRegistry8EndpointE" title="ccf::EndpointRegistry::Endpoint"><span class="pre">Endpoint</span></a> <span class="pre">&amp;</span><code class="sig-name descname"><span class="pre">set_params_schema</span></code><span class="sig-paren">(</span><em class="property"><span class="pre">const</span></em> <span class="pre">nlohmann</span><span class="pre">::</span><span class="pre">json</span> <span class="pre">&amp;</span><em><span class="pre">j</span></em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3ccf16EndpointRegistry8Endpoint17set_params_schemaERKN8nlohmann4jsonE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Sets the JSON schema that the request parameters must comply with.</p>
-<p><dl class="simple">
-<dt><strong>Return</strong></dt><dd><p>This <a class="reference internal" href="#structccf_1_1EndpointRegistry_1_1Endpoint"><span class="std std-ref">Endpoint</span></a> for further modification </p>
-</dd>
-<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">j</span></code>: Request parameters JSON schema </p></li>
-</ul>
-</dd>
-</dl>
-</p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt id="_CPPv4N3ccf16EndpointRegistry8Endpoint17set_result_schemaERKN8nlohmann4jsonE">
-<span id="_CPPv3N3ccf16EndpointRegistry8Endpoint17set_result_schemaERKN8nlohmann4jsonE"></span><span id="_CPPv2N3ccf16EndpointRegistry8Endpoint17set_result_schemaERKN8nlohmann4jsonE"></span><span id="ccf::EndpointRegistry::Endpoint::set_result_schema__nlohmann::jsonCR"></span><span class="target" id="structccf_1_1EndpointRegistry_1_1Endpoint_1a532493d774d2abcf71859eedf2ae24a6"></span><em class="property"><span class="pre">inline</span></em> <a class="reference internal" href="#_CPPv4N3ccf16EndpointRegistry8EndpointE" title="ccf::EndpointRegistry::Endpoint"><span class="pre">Endpoint</span></a> <span class="pre">&amp;</span><code class="sig-name descname"><span class="pre">set_result_schema</span></code><span class="sig-paren">(</span><em class="property"><span class="pre">const</span></em> <span class="pre">nlohmann</span><span class="pre">::</span><span class="pre">json</span> <span class="pre">&amp;</span><em><span class="pre">j</span></em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3ccf16EndpointRegistry8Endpoint17set_result_schemaERKN8nlohmann4jsonE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Sets the JSON schema that the request response must comply with.</p>
-<p><dl class="simple">
-<dt><strong>Return</strong></dt><dd><p>This <a class="reference internal" href="#structccf_1_1EndpointRegistry_1_1Endpoint"><span class="std std-ref">Endpoint</span></a> for further modification </p>
-</dd>
-<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">j</span></code>: Request response JSON schema </p></li>
-</ul>
-</dd>
-</dl>
-</p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt id="_CPPv4I00EN3ccf16EndpointRegistry8Endpoint15set_auto_schemaER8Endpointv">
-<span id="_CPPv3I00EN3ccf16EndpointRegistry8Endpoint15set_auto_schemaEv"></span><span id="_CPPv2I00EN3ccf16EndpointRegistry8Endpoint15set_auto_schemaEv"></span><span class="pre">template&lt;</span><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">In</span></code><span class="pre">,</span> <span class="pre">typename</span> <code class="sig-name descname"><span class="pre">Out</span></code><span class="pre">&gt;</span><br /><span class="target" id="structccf_1_1EndpointRegistry_1_1Endpoint_1ad127a12dc5c48d72602ceaedff0a45dc"></span><em class="property"><span class="pre">inline</span></em> <a class="reference internal" href="#_CPPv4N3ccf16EndpointRegistry8EndpointE" title="ccf::EndpointRegistry::Endpoint"><span class="pre">Endpoint</span></a> <span class="pre">&amp;</span><code class="sig-name descname"><span class="pre">set_auto_schema</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I00EN3ccf16EndpointRegistry8Endpoint15set_auto_schemaER8Endpointv" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Sets the schema that the request parameters and response must comply with based on JSON-serialisable data structures.</p>
-<p><p><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>See <code class="docutils literal notranslate"><span class="pre">DECLARE_JSON_</span></code> serialisation macros for serialising
-user-defined data structures.</p>
-</div>
-</p>
-</p>
-<p><dl class="simple">
-<dt><strong>Return</strong></dt><dd><p>This <a class="reference internal" href="#structccf_1_1EndpointRegistry_1_1Endpoint"><span class="std std-ref">Endpoint</span></a> for further modification </p>
-</dd>
-<dt><strong>Template Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">In</span></code>: Request parameters JSON-serialisable data structure </p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Out</span></code>: Request response JSON-serialisable data structure </p></li>
-</ul>
-</dd>
-</dl>
-</p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt id="_CPPv4I0EN3ccf16EndpointRegistry8Endpoint15set_auto_schemaER8Endpointv">
-<span id="_CPPv3I0EN3ccf16EndpointRegistry8Endpoint15set_auto_schemaEv"></span><span id="_CPPv2I0EN3ccf16EndpointRegistry8Endpoint15set_auto_schemaEv"></span><span class="pre">template&lt;</span><span class="pre">typename</span> <code class="sig-name descname"><span class="pre">T</span></code><span class="pre">&gt;</span><br /><span class="target" id="structccf_1_1EndpointRegistry_1_1Endpoint_1a079da8d3acde5a91a1f776cb9491b157"></span><em class="property"><span class="pre">inline</span></em> <a class="reference internal" href="#_CPPv4N3ccf16EndpointRegistry8EndpointE" title="ccf::EndpointRegistry::Endpoint"><span class="pre">Endpoint</span></a> <span class="pre">&amp;</span><code class="sig-name descname"><span class="pre">set_auto_schema</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN3ccf16EndpointRegistry8Endpoint15set_auto_schemaER8Endpointv" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Sets the schema that the request parameters and response must comply with, based on a single JSON-serialisable data structure.</p>
-<p><p><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><code class="docutils literal notranslate"><span class="pre">T</span></code> data structure should contain two nested <code class="docutils literal notranslate"><span class="pre">In</span></code> and <code class="docutils literal notranslate"><span class="pre">Out</span></code>
-structures for request parameters and response format, respectively.</p>
-</div>
-</p>
-</p>
-<p><dl class="simple">
-<dt><strong>Return</strong></dt><dd><p>This <a class="reference internal" href="#structccf_1_1EndpointRegistry_1_1Endpoint"><span class="std std-ref">Endpoint</span></a> for further modification </p>
-</dd>
-<dt><strong>Template Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">T</span></code>: Request parameters and response JSON-serialisable data structure </p></li>
-</ul>
-</dd>
-</dl>
-</p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt id="_CPPv4N3ccf16EndpointRegistry8Endpoint23set_forwarding_requiredE18ForwardingRequired">
-<span id="_CPPv3N3ccf16EndpointRegistry8Endpoint23set_forwarding_requiredE18ForwardingRequired"></span><span id="_CPPv2N3ccf16EndpointRegistry8Endpoint23set_forwarding_requiredE18ForwardingRequired"></span><span id="ccf::EndpointRegistry::Endpoint::set_forwarding_required__ForwardingRequired"></span><span class="target" id="structccf_1_1EndpointRegistry_1_1Endpoint_1aae88da637e002e345f66b45154de3b84"></span><em class="property"><span class="pre">inline</span></em> <a class="reference internal" href="#_CPPv4N3ccf16EndpointRegistry8EndpointE" title="ccf::EndpointRegistry::Endpoint"><span class="pre">Endpoint</span></a> <span class="pre">&amp;</span><code class="sig-name descname"><span class="pre">set_forwarding_required</span></code><span class="sig-paren">(</span><span class="pre">ForwardingRequired</span> <em><span class="pre">fr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3ccf16EndpointRegistry8Endpoint23set_forwarding_requiredE18ForwardingRequired" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Overrides whether a <a class="reference internal" href="#structccf_1_1EndpointRegistry_1_1Endpoint"><span class="std std-ref">Endpoint</span></a> is always forwarded, or whether it is safe to sometimes execute on followers.</p>
-<p><dl class="simple">
-<dt><strong>Return</strong></dt><dd><p>This <a class="reference internal" href="#structccf_1_1EndpointRegistry_1_1Endpoint"><span class="std std-ref">Endpoint</span></a> for further modification </p>
-</dd>
-<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">fr</span></code>: Enum value with desired status </p></li>
-</ul>
-</dd>
-</dl>
-</p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt id="_CPPv4N3ccf16EndpointRegistry8Endpoint19set_execute_locallyEb">
-<span id="_CPPv3N3ccf16EndpointRegistry8Endpoint19set_execute_locallyEb"></span><span id="_CPPv2N3ccf16EndpointRegistry8Endpoint19set_execute_locallyEb"></span><span id="ccf::EndpointRegistry::Endpoint::set_execute_locally__b"></span><span class="target" id="structccf_1_1EndpointRegistry_1_1Endpoint_1a62249692522b96506b7cd7a6cfc76d7a"></span><em class="property"><span class="pre">inline</span></em> <a class="reference internal" href="#_CPPv4N3ccf16EndpointRegistry8EndpointE" title="ccf::EndpointRegistry::Endpoint"><span class="pre">Endpoint</span></a> <span class="pre">&amp;</span><code class="sig-name descname"><span class="pre">set_execute_locally</span></code><span class="sig-paren">(</span><span class="pre">bool</span> <em><span class="pre">v</span></em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3ccf16EndpointRegistry8Endpoint19set_execute_locallyEb" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Indicates that the execution of the <a class="reference internal" href="#structccf_1_1EndpointRegistry_1_1Endpoint"><span class="std std-ref">Endpoint</span></a> does not require consensus from other nodes in the network.</p>
-<p>By default, endpoints are not executed locally.</p>
-<p><p><div class="admonition warning">
+<div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Use with caution. This should only be used for non-critical endpoints
-that do not read or mutate the state of the key-value store.</p>
+<p>doxygenstruct: Cannot find file: /tmp/tmpj7_at_np/e30b576bdd89fc4d2c416e5717d3a1bb5c5de446/doxygen/xml/index.xml</p>
 </div>
-</p>
-</p>
-<p><dl class="simple">
-<dt><strong>Return</strong></dt><dd><p>This <a class="reference internal" href="#structccf_1_1EndpointRegistry_1_1Endpoint"><span class="std std-ref">Endpoint</span></a> for further modification </p>
-</dd>
-<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">v</span></code>: Boolean indicating whether the <a class="reference internal" href="#structccf_1_1EndpointRegistry_1_1Endpoint"><span class="std std-ref">Endpoint</span></a> is executed locally, on the node receiving the request </p></li>
-</ul>
-</dd>
-</dl>
-</p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt id="_CPPv4N3ccf16EndpointRegistry8Endpoint7installEv">
-<span id="_CPPv3N3ccf16EndpointRegistry8Endpoint7installEv"></span><span id="_CPPv2N3ccf16EndpointRegistry8Endpoint7installEv"></span><span id="ccf::EndpointRegistry::Endpoint::install"></span><span class="target" id="structccf_1_1EndpointRegistry_1_1Endpoint_1a669bf673aa8819f9fc49cf83ed90d370"></span><em class="property"><span class="pre">inline</span></em> <span class="pre">void</span> <code class="sig-name descname"><span class="pre">install</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3ccf16EndpointRegistry8Endpoint7installEv" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Finalise and install this endpoint </p>
-</dd></dl>
-
-</div>
-</dd></dl>
-
 </div>
 <div class="section" id="authentication-identities">
 <h3>Authentication Identities<a class="headerlink" href="#authentication-identities" title="Permalink to this headline">¶</a></h3>
-<dl class="cpp struct">
-<dt id="_CPPv4N3ccf21UserCertAuthnIdentityE">
-<span id="_CPPv3N3ccf21UserCertAuthnIdentityE"></span><span id="_CPPv2N3ccf21UserCertAuthnIdentityE"></span><span id="ccf::UserCertAuthnIdentity"></span><span class="target" id="structccf_1_1UserCertAuthnIdentity"></span><em class="property"><span class="pre">struct</span> </em><code class="sig-prename descclassname"><span class="pre">ccf</span><code class="sig-prename descclassname"><span class="pre">::</span></code></code><code class="sig-name descname"><span class="pre">UserCertAuthnIdentity</span></code> <span class="pre">:</span> <em class="property"><span class="pre">public</span></em> <span class="pre">ccf</span><span class="pre">::</span><span class="pre">AuthnIdentity</span><a class="headerlink" href="#_CPPv4N3ccf21UserCertAuthnIdentityE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric">Public Members</p>
-<dl class="cpp var">
-<dt id="_CPPv4N3ccf21UserCertAuthnIdentity7user_idE">
-<span id="_CPPv3N3ccf21UserCertAuthnIdentity7user_idE"></span><span id="_CPPv2N3ccf21UserCertAuthnIdentity7user_idE"></span><span id="ccf::UserCertAuthnIdentity::user_id__UserId"></span><span class="target" id="structccf_1_1UserCertAuthnIdentity_1a825c96e1bbf9795a4214656659d32033"></span><span class="pre">UserId</span> <code class="sig-name descname"><span class="pre">user_id</span></code><a class="headerlink" href="#_CPPv4N3ccf21UserCertAuthnIdentity7user_idE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>CCF user ID, as defined in <code class="docutils literal notranslate"><span class="pre">public:ccf.gov.users</span></code> table </p>
-</dd></dl>
-
-<dl class="cpp var">
-<dt id="_CPPv4N3ccf21UserCertAuthnIdentity9user_certE">
-<span id="_CPPv3N3ccf21UserCertAuthnIdentity9user_certE"></span><span id="_CPPv2N3ccf21UserCertAuthnIdentity9user_certE"></span><span id="ccf::UserCertAuthnIdentity::user_cert__tls::Pem"></span><span class="target" id="structccf_1_1UserCertAuthnIdentity_1a26583c5b50ce50ce0ef58dd3a2c74dea"></span><span class="pre">tls</span><span class="pre">::</span><span class="pre">Pem</span> <code class="sig-name descname"><span class="pre">user_cert</span></code><a class="headerlink" href="#_CPPv4N3ccf21UserCertAuthnIdentity9user_certE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>User certificate, as established by TLS </p>
-</dd></dl>
-
-<dl class="cpp var">
-<dt id="_CPPv4N3ccf21UserCertAuthnIdentity9user_dataE">
-<span id="_CPPv3N3ccf21UserCertAuthnIdentity9user_dataE"></span><span id="_CPPv2N3ccf21UserCertAuthnIdentity9user_dataE"></span><span id="ccf::UserCertAuthnIdentity::user_data__nlohmann::json"></span><span class="target" id="structccf_1_1UserCertAuthnIdentity_1a0d3a4e46a37b9010657e5f38f6338c01"></span><span class="pre">nlohmann</span><span class="pre">::</span><span class="pre">json</span> <code class="sig-name descname"><span class="pre">user_data</span></code><a class="headerlink" href="#_CPPv4N3ccf21UserCertAuthnIdentity9user_dataE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Additional user data, as defined in <code class="docutils literal notranslate"><span class="pre">public:ccf.gov.users</span></code> </p>
-</dd></dl>
-
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>doxygenstruct: Cannot find file: /tmp/tmpj7_at_np/e30b576bdd89fc4d2c416e5717d3a1bb5c5de446/doxygen/xml/index.xml</p>
 </div>
-</dd></dl>
-
-<dl class="cpp struct">
-<dt id="_CPPv4N3ccf16JwtAuthnIdentityE">
-<span id="_CPPv3N3ccf16JwtAuthnIdentityE"></span><span id="_CPPv2N3ccf16JwtAuthnIdentityE"></span><span id="ccf::JwtAuthnIdentity"></span><span class="target" id="structccf_1_1JwtAuthnIdentity"></span><em class="property"><span class="pre">struct</span> </em><code class="sig-prename descclassname"><span class="pre">ccf</span><code class="sig-prename descclassname"><span class="pre">::</span></code></code><code class="sig-name descname"><span class="pre">JwtAuthnIdentity</span></code> <span class="pre">:</span> <em class="property"><span class="pre">public</span></em> <span class="pre">ccf</span><span class="pre">::</span><span class="pre">AuthnIdentity</span><a class="headerlink" href="#_CPPv4N3ccf16JwtAuthnIdentityE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric">Public Members</p>
-<dl class="cpp var">
-<dt id="_CPPv4N3ccf16JwtAuthnIdentity10key_issuerE">
-<span id="_CPPv3N3ccf16JwtAuthnIdentity10key_issuerE"></span><span id="_CPPv2N3ccf16JwtAuthnIdentity10key_issuerE"></span><span id="ccf::JwtAuthnIdentity::key_issuer__ss"></span><span class="target" id="structccf_1_1JwtAuthnIdentity_1a33de9aa34771350bb89ad6b7c29536c7"></span><span class="pre">std</span><span class="pre">::</span><span class="pre">string</span> <code class="sig-name descname"><span class="pre">key_issuer</span></code><a class="headerlink" href="#_CPPv4N3ccf16JwtAuthnIdentity10key_issuerE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>JWT key issuer, as defined in <code class="docutils literal notranslate"><span class="pre">public:ccf.gov.jwt_public_signing_key_issuer</span></code> </p>
-</dd></dl>
-
-<dl class="cpp var">
-<dt id="_CPPv4N3ccf16JwtAuthnIdentity6headerE">
-<span id="_CPPv3N3ccf16JwtAuthnIdentity6headerE"></span><span id="_CPPv2N3ccf16JwtAuthnIdentity6headerE"></span><span id="ccf::JwtAuthnIdentity::header__nlohmann::json"></span><span class="target" id="structccf_1_1JwtAuthnIdentity_1aad375bb2c505f10039ad6d1dce79ebfd"></span><span class="pre">nlohmann</span><span class="pre">::</span><span class="pre">json</span> <code class="sig-name descname"><span class="pre">header</span></code><a class="headerlink" href="#_CPPv4N3ccf16JwtAuthnIdentity6headerE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>JWT header </p>
-</dd></dl>
-
-<dl class="cpp var">
-<dt id="_CPPv4N3ccf16JwtAuthnIdentity7payloadE">
-<span id="_CPPv3N3ccf16JwtAuthnIdentity7payloadE"></span><span id="_CPPv2N3ccf16JwtAuthnIdentity7payloadE"></span><span id="ccf::JwtAuthnIdentity::payload__nlohmann::json"></span><span class="target" id="structccf_1_1JwtAuthnIdentity_1ad93a01b594e860c1d0969333469715a5"></span><span class="pre">nlohmann</span><span class="pre">::</span><span class="pre">json</span> <code class="sig-name descname"><span class="pre">payload</span></code><a class="headerlink" href="#_CPPv4N3ccf16JwtAuthnIdentity7payloadE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>JWT payload </p>
-</dd></dl>
-
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>doxygenstruct: Cannot find file: /tmp/tmpj7_at_np/e30b576bdd89fc4d2c416e5717d3a1bb5c5de446/doxygen/xml/index.xml</p>
 </div>
-</dd></dl>
-
-<dl class="cpp struct">
-<dt id="_CPPv4N3ccf26UserSignatureAuthnIdentityE">
-<span id="_CPPv3N3ccf26UserSignatureAuthnIdentityE"></span><span id="_CPPv2N3ccf26UserSignatureAuthnIdentityE"></span><span id="ccf::UserSignatureAuthnIdentity"></span><span class="target" id="structccf_1_1UserSignatureAuthnIdentity"></span><em class="property"><span class="pre">struct</span> </em><code class="sig-prename descclassname"><span class="pre">ccf</span><code class="sig-prename descclassname"><span class="pre">::</span></code></code><code class="sig-name descname"><span class="pre">UserSignatureAuthnIdentity</span></code> <span class="pre">:</span> <em class="property"><span class="pre">public</span></em> <span class="pre">ccf</span><span class="pre">::</span><span class="pre">AuthnIdentity</span><a class="headerlink" href="#_CPPv4N3ccf26UserSignatureAuthnIdentityE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric">Public Members</p>
-<dl class="cpp var">
-<dt id="_CPPv4N3ccf26UserSignatureAuthnIdentity7user_idE">
-<span id="_CPPv3N3ccf26UserSignatureAuthnIdentity7user_idE"></span><span id="_CPPv2N3ccf26UserSignatureAuthnIdentity7user_idE"></span><span id="ccf::UserSignatureAuthnIdentity::user_id__UserId"></span><span class="target" id="structccf_1_1UserSignatureAuthnIdentity_1aa9195a1912a63e3e7ade144c06383a64"></span><span class="pre">UserId</span> <code class="sig-name descname"><span class="pre">user_id</span></code><a class="headerlink" href="#_CPPv4N3ccf26UserSignatureAuthnIdentity7user_idE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>CCF user ID, as defined in <code class="docutils literal notranslate"><span class="pre">public:ccf.gov.users</span></code> table </p>
-</dd></dl>
-
-<dl class="cpp var">
-<dt id="_CPPv4N3ccf26UserSignatureAuthnIdentity9user_certE">
-<span id="_CPPv3N3ccf26UserSignatureAuthnIdentity9user_certE"></span><span id="_CPPv2N3ccf26UserSignatureAuthnIdentity9user_certE"></span><span id="ccf::UserSignatureAuthnIdentity::user_cert__tls::Pem"></span><span class="target" id="structccf_1_1UserSignatureAuthnIdentity_1addf2c2951ab993762fd150d85e4841f6"></span><span class="pre">tls</span><span class="pre">::</span><span class="pre">Pem</span> <code class="sig-name descname"><span class="pre">user_cert</span></code><a class="headerlink" href="#_CPPv4N3ccf26UserSignatureAuthnIdentity9user_certE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>User certificate, as established by TLS </p>
-</dd></dl>
-
-<dl class="cpp var">
-<dt id="_CPPv4N3ccf26UserSignatureAuthnIdentity9user_dataE">
-<span id="_CPPv3N3ccf26UserSignatureAuthnIdentity9user_dataE"></span><span id="_CPPv2N3ccf26UserSignatureAuthnIdentity9user_dataE"></span><span id="ccf::UserSignatureAuthnIdentity::user_data__nlohmann::json"></span><span class="target" id="structccf_1_1UserSignatureAuthnIdentity_1a4c35ae43a4f55771e6835d3d23e12a59"></span><span class="pre">nlohmann</span><span class="pre">::</span><span class="pre">json</span> <code class="sig-name descname"><span class="pre">user_data</span></code><a class="headerlink" href="#_CPPv4N3ccf26UserSignatureAuthnIdentity9user_dataE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Additional user data, as defined <code class="docutils literal notranslate"><span class="pre">in</span></code> public:ccf.gov.users </p>
-</dd></dl>
-
-<dl class="cpp var">
-<dt id="_CPPv4N3ccf26UserSignatureAuthnIdentity14signed_requestE">
-<span id="_CPPv3N3ccf26UserSignatureAuthnIdentity14signed_requestE"></span><span id="_CPPv2N3ccf26UserSignatureAuthnIdentity14signed_requestE"></span><span id="ccf::UserSignatureAuthnIdentity::signed_request__SignedReq"></span><span class="target" id="structccf_1_1UserSignatureAuthnIdentity_1ab58b00db0391c7d25ab3975401ada45b"></span><span class="pre">SignedReq</span> <code class="sig-name descname"><span class="pre">signed_request</span></code><a class="headerlink" href="#_CPPv4N3ccf26UserSignatureAuthnIdentity14signed_requestE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Canonicalised request and associated signature </p>
-</dd></dl>
-
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>doxygenstruct: Cannot find file: /tmp/tmpj7_at_np/e30b576bdd89fc4d2c416e5717d3a1bb5c5de446/doxygen/xml/index.xml</p>
 </div>
-</dd></dl>
-
 </div>
 </div>
 </div>
